@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0B0F19;
+  --color-foreground: #E5E7EB;
+  --color-primary: #8B5CF6;
+  --color-accent: #FF4D8D;
+  --color-muted: #1F2937;
+  --color-muted-foreground: #9CA3AF;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+}
+
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary selection:text-white;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom Components */
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-card {
+    @apply bg-gray-800/50 backdrop-blur-lg border border-white/5 transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply bg-gray-800/80 border-primary ring-1 ring-primary/20;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
