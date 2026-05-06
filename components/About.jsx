@@ -1,6 +1,6 @@
 "use client";
 
-import aboutImg from "@/asset/about.png";
+import aboutImg from "@/asset/about2.png";
 import Section from "./Section";
 import { motion } from "framer-motion";
 import Image from "next/image";
