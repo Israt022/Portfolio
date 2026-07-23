@@ -1,9 +1,10 @@
 "use client";
 import skillsImg from "@/asset/Portfolio/skillsPhere.png";
-import newsImg from "@/asset/Portfolio/DragonNews.png";
-import bookImg from "@/asset/Portfolio/bookVibe.png";
-import keenImg from "@/asset/Portfolio/keenKeeper.png";
-import playImg from "@/asset/Portfolio/playStore.png";
+import SkillPilot from "@/asset/Portfolio/skillpilot.png";
+import ticketbari from "@/asset/Portfolio/ticketbari.png";
+import petverse from "@/asset/Portfolio/petverse.png";
+import confluxa from "@/asset/Portfolio/confluxa.png";
+import expensetracker from "@/asset/Portfolio/expensetracker.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Section from "./Section";
@@ -11,51 +12,63 @@ import Section from "./Section";
 const projects = [
   {
     id: 1,
-    title: "SkillSphere",
-    category: "Full Stack Learning Platform",
+    title: "TicketBari",
+    category: "Full Stack Ticket Booking Platform",
     description:
-      "An online learning platform with courses, authentication, instructor system, and protected course access.",
+      "A full-stack ticket booking platform where users can explore events, book tickets, make secure payments, and manage bookings through a modern dashboard.",
+    image: ticketbari,
+    live: "https://ticketbari-client-steel.vercel.app/",
+    repo: "https://github.com/Israt022/ticketbari_client",
+  },
+  {
+    id: 2,
+    title: "SkillPilot-AI",
+    category: "AI Learning Platform",
+    description:
+      "An AI-powered learning platform featuring authentication, interactive courses, AI assistance, and a modern dashboard for learners and instructors.",
+    image: SkillPilot,
+    live: "https://skill-pilot-ai-sigma.vercel.app/",
+    repo: "https://github.com/Israt022/SkillPilot-AI",
+  },
+  {
+    id: 3,
+    title: "PetVerse",
+    category: "Pet Adoption Platform",
+    description:
+      "A full-stack pet adoption platform where users can browse pets, submit adoption requests, manage listings, and complete secure online donations.",
+    image: petverse,
+    live: "https://pet-verse-mu.vercel.app/",
+    repo: "https://github.com/Israt022/PetVerse-Client",
+  },
+  {
+    id: 4,
+    title: "Confluxa",
+    category: "Event Management Platform",
+    description:
+      "A responsive event management platform that allows users to discover events, book tickets, manage registrations, and explore upcoming activities.",
+    image: confluxa,
+    live: "https://confluxa-client.vercel.app/",
+    repo: "https://github.com/Israt022/Confluxa_Client",
+  },
+  {
+    id: 5,
+    title: "SkillSphere",
+    category: "Online Learning Platform",
+    description:
+      "A responsive e-learning platform with course management, secure authentication, instructor features, and an engaging learning experience.",
     image: skillsImg,
     live: "https://skill-sphere-kohl.vercel.app",
     repo: "https://github.com/Israt022/SkillSphere",
   },
   {
-    id: 2,
-    title: "Dragon News",
-    category: "Frontend News App",
+    id: 6,
+    title: "Expense Tracker",
+    category: "Personal Finance Tracker",
     description:
-      "A responsive news application built with React that fetches real-time news by category with Firebase authentication for secure user login.",
-    image: newsImg,
-    live: "https://dragon-news-roan-three.vercel.app/category/01",
-    repo: "https://github.com/Israt022/Dragon-News",
-  },
-  {
-    id: 3,
-    title: "Book Vibe",
-    category: "Frontend Book management",
-    description: "Book can get and book add to wishlist for reading",
-    image: bookImg,
-    live: "https://book-vibe-liard-theta.vercel.app/",
-    repo: "https://github.com/Israt022/Book-Vibe",
-  },
-  {
-    id: 4,
-    title: "KeenKeeper",
-    category: "Frontend React App",
-    description:
-      "A friendship management app that helps users track interactions, set relationship goals, and visualize communication history with analytics charts.",
-    image: keenImg,
-    live: "https://keen-keeper-nu.vercel.app/",
-    repo: "https://github.com/Israt022/Keen-Keeper",
-  },
-  {
-    id: 5,
-    title: "Play Store App",
-    category: "Frontend React App",
-    description: "A app store project",
-    image: playImg,
-    live: "https://ph-play-store-app.vercel.app/",
-    repo: "https://github.com/Israt022/PH-Play-Store-App",
+      "A responsive expense tracking application that helps users manage income, expenses, budgets, and visualize spending with interactive charts.",
+    image: expensetracker,
+    live: "https://expense-tracker-client-swart.vercel.app/",
+    repo: "https://github.com/Israt022/expense-tracker-client",
   },
 ];
 

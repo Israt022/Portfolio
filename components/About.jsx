@@ -40,9 +40,9 @@ export default function About() {
 
           {/* BADGE */}
           <div className="absolute bottom-0 right-38 translate-x-1/4 translate-y-1/4 glass px-4 py-2 rounded-xl shadow-lg">
-            <p className="text-sm font-semibold text-primary">Frontend Dev</p>
+            <p className="text-sm font-semibold text-primary">MERN Stack Dev</p>
             <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-              React • Next.js
+              MongoDB • React • Next.js
             </p>
           </div>
 
@@ -56,13 +56,16 @@ export default function About() {
           </h2>
 
           <p className="text-sm md:text-base text-muted-foreground mb-5 leading-relaxed max-w-md mx-auto md:mx-0">
-            I'm a passionate Frontend Developer who enjoys building clean,
-            responsive and interactive web interfaces using React and Next.js.
+            I'm a passionate MERN Stack Developer who enjoys building modern,
+            responsive, and user-friendly web applications. I love turning ideas into
+            real-world digital experiences using React, Next.js, Node.js, Express.js,
+            and MongoDB.
           </p>
 
           <p className="text-sm md:text-base text-muted-foreground mb-8 leading-relaxed max-w-md mx-auto md:mx-0">
-            Currently, I'm improving my skills by learning backend development
-            with Node.js and Express.js to become a well-rounded developer.
+            I enjoy solving real-world problems, learning new technologies, and
+            improving my development skills. I'm always exploring better ways to build
+            scalable, efficient, and user-friendly applications.
           </p>
 
           {/* CARDS */}
@@ -73,16 +76,16 @@ export default function About() {
                 Frontend
               </h4>
               <p className="text-xs text-muted-foreground">
-                React, Next.js, Tailwind
+                React, Next.js, Tailwind CSS
               </p>
             </div>
 
             <div className="glass-card p-4 rounded-xl">
               <h4 className="font-semibold text-accent mb-1 text-sm">
-                Learning
+                Backend
               </h4>
               <p className="text-xs text-muted-foreground">
-                Node.js & Express
+                Node.js, Express.js, MongoDB
               </p>
             </div>
 

@@ -2,6 +2,7 @@
 import heroImg from "@/asset/hero.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
@@ -19,49 +20,81 @@ export default function Hero() {
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-primary font-semibold tracking-[0.25em] uppercase text-xs mb-4 block"
+            className="text-primary uppercase tracking-[0.25em] text-xs font-medium"
           >
-            Frontend Developer
+            Hi, I'm
           </motion.span>
 
+          {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold leading-snug mb-4"
+            className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white"
           >
-            Crafting Modern <br />
-            <span className="text-gradient">React & Next.js</span> <br />
-            Interfaces That Feel Alive.
+            MST Israt Jahan Era
           </motion.h1>
+
+          {/* Typing */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="mt-3 h-7"
+          >
+            <TypeAnimation
+              sequence={[
+                "MERN Stack Developer",
+                2000,
+                "Frontend Developer",
+                2000,
+                "React & Next.js Developer",
+                2000,
+              ]}
+              wrapper="span"
+              speed={60}
+              repeat={Infinity}
+              className="text-primary text-lg md:text-xl font-medium"
+              cursor={true}
+            />
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-sm md:text-base text-muted-foreground max-w-md mb-6 mx-auto md:mx-0"
+            transition={{ delay: 0.3 }}
+            className="mt-5 text-sm md:text-base text-muted-foreground max-w-lg leading-7 mx-auto md:mx-0"
           >
-            I’m a Frontend Developer focused on building clean, responsive and
-            interactive web interfaces using React, Next.js and modern UI tools.
+            Passionate about building responsive, user-friendly and modern web
+            applications using React, Next.js, Node.js, Express.js, MongoDB and
+            TypeScript. I enjoy turning ideas into real-world digital experiences.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-wrap justify-center md:justify-start gap-3"
+            transition={{ delay: 0.4 }}
+            className="flex flex-wrap justify-center md:justify-start gap-3 mt-8"
           >
-            <a href="#projects">
-              <button className="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition hover:-translate-y-1">
-                View My Work
-              </button>
-            </a>
+            {/* Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="flex flex-wrap justify-center md:justify-start gap-3 mt-8"
+            >
+              <a href="#projects">
+                <button className="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition hover:-translate-y-1">
+                  View My Work
+                </button>
+              </a>
 
-            <a href="#contact">
-              <button className="glass px-6 py-3 rounded-full font-semibold hover:bg-white/5 transition hover:-translate-y-1">
-                Contact Me
-              </button>
-            </a>
+              <a href="#contact">
+                <button className="glass px-6 py-3 rounded-full font-semibold hover:bg-white/5 transition hover:-translate-y-1">
+                  Contact Me
+                </button>
+              </a>
+            </motion.div>
           </motion.div>
         </div>
 

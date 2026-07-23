@@ -12,7 +12,7 @@ const education = [
       "Completed SSC from Vocational background in Computer & Information Technology trade, gaining foundational knowledge in computer systems, basic programming, and IT fundamentals.",
   },
   {
-    year: "2022 - Present",
+    year: "2022 - 2026",
     title: "Diploma in Engineering – CST (Computer Science & Technology)",
     institution: "7th Semester (Session 2022–23)",
     description:

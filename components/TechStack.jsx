@@ -2,27 +2,34 @@
 
 import Section from "./Section";
 import { motion } from "framer-motion";
-import { DiDjango } from "react-icons/di";
 import {
   SiReact,
-  SiTailwindcss,
-  SiMongodb,
-  SiExpress,
   SiNextdotjs,
-  SiNodedotjs,
+  SiTypescript,
   SiJavascript,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
   SiGithub,
+  SiGit,
+  SiVercel,
+  SiHeroui,
 } from "react-icons/si";
 
 const technologies = [
   { name: "React", icon: <SiReact /> },
   { name: "Next.js", icon: <SiNextdotjs /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "HeroUI", icon: <SiHeroui /> },
   { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "Express.js", icon: <SiExpress /> },
   { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "Express", icon: <SiExpress /> },
+  { name: "Git", icon: <SiGit /> },
   { name: "GitHub", icon: <SiGithub /> },
+  { name: "Vercel", icon: <SiVercel /> },
 ];
 
 export default function TechStack() {

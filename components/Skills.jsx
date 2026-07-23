@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 import {
   SiReact,
   SiNextdotjs,
-  SiJavascript,
+  SiTypescript,
   SiTailwindcss,
   SiNodedotjs,
   SiExpress,
   SiMongodb,
+  SiJavascript,
 } from "react-icons/si";
 
 const skillGroups = [
@@ -18,17 +19,17 @@ const skillGroups = [
     skills: [
       { name: "React", icon: <SiReact /> },
       { name: "Next.js", icon: <SiNextdotjs /> },
-      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     ],
   },
   {
-    title: "Backend (Learning)",
+    title: "Backend",
     skills: [
       { name: "Node.js", icon: <SiNodedotjs /> },
-      { name: "Express", icon: <SiExpress /> },
+      { name: "Express.js", icon: <SiExpress /> },
       { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "MySQL", icon: "🗄️" },
+      { name: "JavaScript", icon: <SiJavascript /> },
     ],
   },
 ];
