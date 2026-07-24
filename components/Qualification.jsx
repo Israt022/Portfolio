@@ -5,19 +5,20 @@ import { motion } from "framer-motion";
 
 const education = [
   {
-    year: "2020 - 2022",
-    title: "SSC (Vocational) – Computer & Information Technology",
-    institution: "Completed (Session 2020)",
-    description:
-      "Completed SSC from Vocational background in Computer & Information Technology trade, gaining foundational knowledge in computer systems, basic programming, and IT fundamentals.",
-  },
-  {
     year: "2022 - 2026",
     title: "Diploma in Engineering – CST (Computer Science & Technology)",
     institution: "7th Semester (Session 2022–23)",
     description:
       "Currently pursuing Diploma in Computer Science & Technology, focusing on software development, web technologies, and modern frameworks like React, Next.js, and Node.js.",
   },
+  // {
+  //   year: "2020 - 2022",
+  //   title: "SSC (Vocational) – Computer & Information Technology",
+  //   institution: "Completed (Session 2020)",
+  //   description:
+  //     "Completed SSC from Vocational background in Computer & Information Technology trade, gaining foundational knowledge in computer systems, basic programming, and IT fundamentals.",
+  // },
+
 ];
 
 export default function Qualification() {

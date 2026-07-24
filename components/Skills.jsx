@@ -2,6 +2,7 @@
 
 import Section from "./Section";
 import { motion } from "framer-motion";
+import { Code2 } from "lucide-react";
 import {
   SiReact,
   SiNextdotjs,
@@ -11,6 +12,10 @@ import {
   SiExpress,
   SiMongodb,
   SiJavascript,
+  SiGit,
+  SiGithub,
+  SiVercel,
+  SiVscodium,
 } from "react-icons/si";
 
 const skillGroups = [
@@ -32,6 +37,15 @@ const skillGroups = [
       { name: "JavaScript", icon: <SiJavascript /> },
     ],
   },
+  {
+    title: "Tools",
+    skills: [
+      { name: "Git", icon: <SiGit /> },
+      { name: "GitHub", icon: <SiGithub /> },
+      { name: "VS Code", icon: <Code2 /> },
+      { name: "Vercel", icon: <SiVercel /> },
+    ],
+  }
 ];
 
 export default function Skills() {

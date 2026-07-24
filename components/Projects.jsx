@@ -1,78 +1,14 @@
 "use client";
-import skillsImg from "@/asset/Portfolio/skillsPhere.png";
-import SkillPilot from "@/asset/Portfolio/skillpilot.png";
-import ticketbari from "@/asset/Portfolio/ticketbari.png";
-import petverse from "@/asset/Portfolio/petverse.png";
-import confluxa from "@/asset/Portfolio/confluxa.png";
-import expensetracker from "@/asset/Portfolio/expensetracker.png";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Section from "./Section";
+import Link from "next/link";
+import { projects } from "@/data/projects";
 
-const projects = [
-  {
-    id: 1,
-    title: "TicketBari",
-    category: "Full Stack Ticket Booking Platform",
-    description:
-      "A full-stack ticket booking platform where users can explore events, book tickets, make secure payments, and manage bookings through a modern dashboard.",
-    image: ticketbari,
-    live: "https://ticketbari-client-steel.vercel.app/",
-    repo: "https://github.com/Israt022/ticketbari_client",
-  },
-  {
-    id: 2,
-    title: "SkillPilot-AI",
-    category: "AI Learning Platform",
-    description:
-      "An AI-powered learning platform featuring authentication, interactive courses, AI assistance, and a modern dashboard for learners and instructors.",
-    image: SkillPilot,
-    live: "https://skill-pilot-ai-sigma.vercel.app/",
-    repo: "https://github.com/Israt022/SkillPilot-AI",
-  },
-  {
-    id: 3,
-    title: "PetVerse",
-    category: "Pet Adoption Platform",
-    description:
-      "A full-stack pet adoption platform where users can browse pets, submit adoption requests, manage listings, and complete secure online donations.",
-    image: petverse,
-    live: "https://pet-verse-mu.vercel.app/",
-    repo: "https://github.com/Israt022/PetVerse-Client",
-  },
-  {
-    id: 4,
-    title: "Confluxa",
-    category: "Event Management Platform",
-    description:
-      "A responsive event management platform that allows users to discover events, book tickets, manage registrations, and explore upcoming activities.",
-    image: confluxa,
-    live: "https://confluxa-client.vercel.app/",
-    repo: "https://github.com/Israt022/Confluxa_Client",
-  },
-  {
-    id: 5,
-    title: "SkillSphere",
-    category: "Online Learning Platform",
-    description:
-      "A responsive e-learning platform with course management, secure authentication, instructor features, and an engaging learning experience.",
-    image: skillsImg,
-    live: "https://skill-sphere-kohl.vercel.app",
-    repo: "https://github.com/Israt022/SkillSphere",
-  },
-  {
-    id: 6,
-    title: "Expense Tracker",
-    category: "Personal Finance Tracker",
-    description:
-      "A responsive expense tracking application that helps users manage income, expenses, budgets, and visualize spending with interactive charts.",
-    image: expensetracker,
-    live: "https://expense-tracker-client-swart.vercel.app/",
-    repo: "https://github.com/Israt022/expense-tracker-client",
-  },
-];
 
 export default function Projects() {
+  // const pro = projec
   return (
     <Section id="projects" className="bg-muted/10">
       <div className="max-w-6xl mx-auto px-6">
@@ -137,6 +73,11 @@ export default function Projects() {
                   >
                     GitHub
                   </a>
+                  <Link href={`/projects/${project.id}`}
+                    className="text-xs px-3 py-2 rounded-lg border border-white/20 hover:bg-white/5 transition"
+                  >
+                    View Details
+                  </Link>
                 </div>
               </div>
             </motion.div>

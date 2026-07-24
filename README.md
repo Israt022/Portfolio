@@ -1,51 +1,64 @@
-# Modern & Fluid Developer Portfolio
+# 🚀 Israt Portfolio
 
-A premium developer portfolio built with **Next.js (App Router)** and **JavaScript**.
+A modern, responsive, and interactive personal portfolio showcasing my projects, skills, and experience as a MERN Stack Developer.
 
-## 🚀 Features
+## 🌐 Live Demo
 
-- **Next.js 14**: Modern framework for performance.
-- **GSAP & ScrollTrigger**: Smooth scroll animations and section reveals.
-- **Framer Motion**: Staggered entrance animations and page transitions.
-- **Lenis**: Buttery smooth scrolling experience.
-- **Tailwind CSS**: Custom color palette and utility-first styling.
-- **Glassmorphism**: Premium frosted glass effects.
-- **Responsive**: Fully optimized for all screen sizes.
-- **Bonus**: Custom cursor and loading animation intro.
+> `https://portfolio-lovat-two-okbeg1pokh.vercel.app/`
 
-## 🎨 Color Palette
+## ✨ Features
 
-- **Background**: `#0B0F19` (Soft Black)
-- **Primary**: `#8B5CF6` (Purple)
-- **Accent**: `#FF4D8D` (Pink)
-- **Text**: `#E5E7EB` (Light Grey)
+- Modern & Responsive Design
+- Smooth Scrolling Experience
+- Interactive UI & Animations
+- Project Showcase
+- Skills & Technologies
+- About Me Section
+- Contact Section
+- Mobile Friendly
+- Fast Performance
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js
-- **Styling**: Tailwind CSS
-- **Animations**: GSAP, Framer Motion
-- **Scrolling**: Lenis
-- **Icons**: Lucide (Placeholders used)
+### Frontend
 
-## 📦 Getting Started
+- Next JS
+- Tailwind CSS
+- Lucide Icon
+- JavaScript
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Tools
 
-2. **Run development server**:
-   ```bash
-   npm run dev
-   ```
+- Git
+- GitHub
+- VS Code
 
-3. **Open browser**:
-   Visit [http://localhost:3000](http://localhost:3000)
+## 📂 Sections
 
-## 📁 Project Structure
+- Hero
+- About
+- Tech
+- Skills
+- Projects
+- Contact
+- Footer
 
-- `app/`: Next.js App Router files.
-- `components/`: Reusable React components.
-- `tailwind.config.js`: Custom theme configuration.
-- `package.json`: Project dependencies and scripts.
+## 📸 Featured Projects
+
+- 🎟️ TicketBari
+- 🤖 SkillPilot AI
+- 🐾 PetVerse
+- 🎉 Confluxa
+- 📚 SkillsPhere
+- 📖 Expense Tracker
+
+## 📬 Contact
+
+**Israt Jahan Era**
+
+- Email: eraisrat022@gmail.com
+- GitHub: https://github.com/israt022
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub.

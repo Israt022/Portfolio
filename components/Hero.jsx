@@ -1,7 +1,10 @@
 "use client";
 import heroImg from "@/asset/hero.png";
 import { motion } from "framer-motion";
+import { Mail } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaTwitter, FaXTwitter } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
@@ -74,7 +77,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-wrap justify-center md:justify-start gap-3 mt-8"
+            className="flex flex-wrap flex-col justify-center md:justify-start gap-3 mt-8"
           >
             {/* Buttons */}
             <motion.div
@@ -83,19 +86,53 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="flex flex-wrap justify-center md:justify-start gap-3 mt-8"
             >
-              <a href="#projects">
-                <button className="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition hover:-translate-y-1">
-                  View My Work
-                </button>
-              </a>
+              <Link
+                href="https://drive.google.com/file/d/1wNgfzwFkdOdvJkvPgM4c3OwSyLEZ4FnL/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition hover:-translate-y-1"
+              >
+                View Resume
+              </Link>
 
-              <a href="#contact">
+              <Link href="#contact">
                 <button className="glass px-6 py-3 rounded-full font-semibold hover:bg-white/5 transition hover:-translate-y-1">
                   Contact Me
                 </button>
-              </a>
+              </Link>
             </motion.div>
+
+            <div className="flex items-center justify-center md:justify-start gap-5 mt-6">
+              <Link
+                href="https://github.com/Israt022"
+                target="_blank"
+                aria-label="GitHub"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaGithub size={22} />
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/mst-israt-jahan-era/"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <FaLinkedin size={22} />
+              </Link>
+
+              <Link
+                href="https://x.com/isratjahan14004"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                className="text-muted-foreground transition hover:text-primary"
+              >
+                <FaXTwitter />
+              </Link>
+            </div>
           </motion.div>
+
         </div>
 
         {/* IMAGE (shape same, just smaller + cleaner) */}

@@ -16,14 +16,14 @@ export default function Home() {
       <LoadingScreen />
       <CustomCursor />
       <Navbar />
-      
+
       <div className="relative z-10">
         <Hero />
         <About />
         <TechStack />
         <Skills />
-        <Projects />
         <Qualification />
+        <Projects />
         <Contact />
         <Footer />
       </div>

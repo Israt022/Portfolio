@@ -56,16 +56,11 @@ export default function About() {
           </h2>
 
           <p className="text-sm md:text-base text-muted-foreground mb-5 leading-relaxed max-w-md mx-auto md:mx-0">
-            I'm a passionate MERN Stack Developer who enjoys building modern,
-            responsive, and user-friendly web applications. I love turning ideas into
-            real-world digital experiences using React, Next.js, Node.js, Express.js,
-            and MongoDB.
+            My programming journey started with HTML, CSS, and JavaScript, and gradually expanded to React, Next.js, Node.js, Express.js, and MongoDB. I enjoy building modern, responsive, and user-friendly web applications that solve real-world problems.
           </p>
 
           <p className="text-sm md:text-base text-muted-foreground mb-8 leading-relaxed max-w-md mx-auto md:mx-0">
-            I enjoy solving real-world problems, learning new technologies, and
-            improving my development skills. I'm always exploring better ways to build
-            scalable, efficient, and user-friendly applications.
+            Beyond coding, I enjoy photography, gaming, movies, travelling, and drawing. I'm a curious learner who enjoys exploring new technologies and continuously improving my skills to create better digital experiences.
           </p>
 
           {/* CARDS */}
