@@ -26,7 +26,7 @@ export default function About() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="relative w-[220px] h-[220px] md:w-[300px] md:h-[300px] bg-gradient-to-br from-primary/40 to-accent/40 overflow-hidden glass border border-white/10"
+            className="relative w-[220px] h-[220px] md:w-[300px] md:h-[300px] bg-primary/15 overflow-hidden glass border border-border"
           >
             <div className="relative w-full h-full p-4">
               <Image
@@ -52,7 +52,7 @@ export default function About() {
         <div className="text-center md:text-left">
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            About <span className="text-gradient">Me</span>
+            About <span className="text-primary">Me</span>
           </h2>
 
           <p className="text-sm md:text-base text-muted-foreground mb-5 leading-relaxed max-w-md mx-auto md:mx-0">

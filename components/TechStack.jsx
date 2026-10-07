@@ -37,7 +37,7 @@ export default function TechStack() {
     <Section id="tech">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold">
-          Tech <span className="text-gradient">Stack</span>
+          Tech <span className="text-primary">Stack</span>
         </h2>
         <p className="text-muted-foreground mt-2">
           Tools & technologies I use

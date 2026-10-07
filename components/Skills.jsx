@@ -55,7 +55,7 @@ export default function Skills() {
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Skills & <span className="text-gradient">Stack</span>
+            Skills & <span className="text-primary">Stack</span>
           </h2>
           <p className="text-muted-foreground mt-2">
             Technologies I use for building web applications

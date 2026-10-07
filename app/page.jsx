@@ -21,17 +21,16 @@ export default function Home() {
         <Hero />
         <About />
         <TechStack />
-        <Skills />
+        {/* <Skills /> */}
         <Qualification />
         <Projects />
         <Contact />
         <Footer />
       </div>
 
-      {/* Global Background Elements */}
+      {/* Global Background Elements — solid color ambient glow */}
       <div className="fixed inset-0 pointer-events-none -z-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,#3b1e84_0%,#0B0F19_100%)] opacity-30" />
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150" />
+        <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[160px]" />
       </div>
     </main>
   );

@@ -29,7 +29,7 @@ export default function LoadingScreen() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-6xl font-black font-display text-gradient mb-8"
+            className="text-4xl md:text-6xl font-black font-display text-primary mb-8"
           >
             &lt;Israt /&gt;
           </motion.div>
@@ -43,7 +43,7 @@ export default function LoadingScreen() {
                 repeat: Infinity, 
                 ease: "easeInOut" 
               }}
-              className="absolute top-0 bottom-0 w-1/2 bg-gradient-to-r from-primary to-accent"
+              className="absolute top-0 bottom-0 w-1/2 bg-primary"
             />
           </div>
           
@@ -53,7 +53,7 @@ export default function LoadingScreen() {
             transition={{ delay: 0.5 }}
             className="mt-6 text-xs uppercase tracking-[0.3em] font-bold text-muted-foreground"
           >
-            Mixing Liquid Experiences
+            Loading Portfolio
           </motion.p>
         </motion.div>
       )}

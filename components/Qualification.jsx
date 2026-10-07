@@ -7,7 +7,7 @@ const education = [
   {
     year: "2022 - 2026",
     title: "Diploma in Engineering – CST (Computer Science & Technology)",
-    institution: "7th Semester (Session 2022–23)",
+    institution: "8th Semester (Session 2022–23)",
     description:
       "Currently pursuing Diploma in Computer Science & Technology, focusing on software development, web technologies, and modern frameworks like React, Next.js, and Node.js.",
   },
@@ -29,7 +29,7 @@ export default function Qualification() {
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Education & <span className="text-gradient">Journey</span>
+            Education & <span className="text-primary">Journey</span>
           </h2>
           <p className="text-muted-foreground mt-2">
             My academic background and learning path

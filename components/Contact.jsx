@@ -43,8 +43,8 @@ export default function Contact() {
     <Section id="contact" className="relative pb-32 overflow-hidden">
 
       {/* Background Glow (kept but softer) */}
-      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/10 rounded-full blur-[120px]" />
-      <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent/10 rounded-full blur-[120px]" />
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/8 rounded-full blur-[120px]" />
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent/6 rounded-full blur-[120px]" />
 
       <div className="max-w-5xl mx-auto px-6">
 
@@ -56,17 +56,17 @@ export default function Contact() {
             <div>
 
               <h2 className="text-3xl md:text-4xl font-black font-display mb-6">
-                Let’s <span className="text-gradient">Connect</span>
+                Let's <span className="text-primary">Connect</span>
               </h2>
 
               <p className="text-muted-foreground text-base mb-10 leading-relaxed">
-                I’m currently learning and building web development projects. If you have any feedback, ideas, or collaboration opportunities, feel free to reach out.
+                I'm currently learning and building web development projects. If you have any feedback, ideas, or collaboration opportunities, feel free to reach out.
               </p>
 
               <div className="space-y-5">
 
                 <div className="flex items-center gap-5">
-                  <div className="w-12 h-12 rounded-xl glass flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-border flex items-center justify-center text-primary">
                     <Mail />
                   </div>
                   <div>
@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-center gap-5">
-                  <div className="w-12 h-12 rounded-xl glass flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-border flex items-center justify-center text-primary">
                     <MapPin />
                   </div>
                   <div>
@@ -105,7 +105,7 @@ export default function Contact() {
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-primary transition"
+                className="w-full bg-white/5 border border-border rounded-xl p-4 focus:outline-none focus:border-primary transition text-foreground placeholder:text-muted-foreground"
               />
 
               <input
@@ -114,7 +114,7 @@ export default function Contact() {
                 placeholder="Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-primary transition"
+                className="w-full bg-white/5 border border-border rounded-xl p-4 focus:outline-none focus:border-primary transition text-foreground placeholder:text-muted-foreground"
               />
 
               <textarea
@@ -123,10 +123,10 @@ export default function Contact() {
                 placeholder="Your Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-primary transition"
+                className="w-full bg-white/5 border border-border rounded-xl p-4 focus:outline-none focus:border-primary transition text-foreground placeholder:text-muted-foreground"
               />
 
-              <button type="submit" disabled={loading} className="w-full bg-gradient-to-r from-primary to-accent py-5 rounded-2xl font-black font-display text-white text-lg hover:shadow-[0_0_30px_rgba(139,92,246,0.4)] transition-all transform active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed">
+              <button type="submit" disabled={loading} className="w-full bg-primary py-5 rounded-2xl font-black font-display text-white text-lg hover:bg-[#7C3AED] transition-all transform active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed">
                 {loading ? "Sending..." : "Send Message"}
               </button>
 

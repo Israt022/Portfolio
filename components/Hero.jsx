@@ -1,19 +1,18 @@
 "use client";
 import heroImg from "@/asset/hero.png";
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background Blobs (softer + smaller) */}
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/20 rounded-full blur-[90px] animate-pulse" />
+      {/* Subtle decorative elements — solid color, no gradients */}
+      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-[100px]" />
       <div
-        className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-accent/20 rounded-full blur-[90px] animate-pulse"
+        className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/8 rounded-full blur-[100px]"
         style={{ animationDelay: "2s" }}
       />
 
@@ -90,13 +89,13 @@ export default function Hero() {
                 href="https://drive.google.com/file/d/1wNgfzwFkdOdvJkvPgM4c3OwSyLEZ4FnL/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition hover:-translate-y-1"
+                className="btn-primary px-6 py-3 hover:-translate-y-1 transition-transform"
               >
                 View Resume
               </Link>
 
               <Link href="#contact">
-                <button className="glass px-6 py-3 rounded-full font-semibold hover:bg-white/5 transition hover:-translate-y-1">
+                <button className="btn-secondary px-6 py-3 hover:-translate-y-1 transition-transform">
                   Contact Me
                 </button>
               </Link>
@@ -135,7 +134,7 @@ export default function Hero() {
 
         </div>
 
-        {/* IMAGE (shape same, just smaller + cleaner) */}
+        {/* IMAGE — clean solid-color presentation */}
         <motion.div
           initial={{ opacity: 0, scale: 0.85, rotate: 5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -143,9 +142,10 @@ export default function Hero() {
           className="relative flex justify-center"
         >
           <div className="relative w-[210px] h-[210px] md:w-[290px] md:h-[290px] lg:w-[330px] lg:h-[330px]">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-[30%_70%_70%_30%/30%_30%_70%_70%] blur-2xl opacity-20 animate-pulse" />
+            {/* Solid-color glow behind image */}
+            <div className="absolute inset-0 bg-primary/15 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] blur-2xl animate-pulse" />
 
-            <div className="relative w-full h-full rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden border border-white/10 glass p-3">
+            <div className="relative w-full h-full rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden border border-border glass p-3">
               <Image
                 src={heroImg}
                 alt="Hero Image"

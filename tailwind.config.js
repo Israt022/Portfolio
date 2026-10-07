@@ -8,19 +8,21 @@ module.exports = {
     extend: {
       colors: {
         background: "#0B0F19",
+        surface: "#111827",
         primary: {
           DEFAULT: "#8B5CF6",
           foreground: "#FFFFFF",
         },
         accent: {
-          DEFAULT: "#FF4D8D",
+          DEFAULT: "#EC4899",
           foreground: "#FFFFFF",
         },
-        foreground: "#E5E7EB",
+        foreground: "#F3F4F6",
         muted: {
           DEFAULT: "#1F2937",
           foreground: "#9CA3AF",
         },
+        border: "rgba(255,255,255,0.08)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],

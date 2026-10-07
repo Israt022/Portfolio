@@ -2,11 +2,13 @@
 
 @theme {
   --color-background: #0B0F19;
-  --color-foreground: #E5E7EB;
+  --color-surface: #111827;
+  --color-foreground: #F3F4F6;
   --color-primary: #8B5CF6;
-  --color-accent: #FF4D8D;
+  --color-accent: #EC4899;
   --color-muted: #1F2937;
   --color-muted-foreground: #9CA3AF;
+  --color-border: rgba(255, 255, 255, 0.08);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -36,20 +38,52 @@
 /* Custom Components */
 @layer components {
   .glass {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    @apply bg-surface/60 backdrop-blur-xl border border-border;
   }
 
   .glass-card {
-    @apply bg-gray-800/50 backdrop-blur-lg border border-white/5 transition-all duration-300;
+    @apply bg-surface/70 backdrop-blur-lg border border-border transition-all duration-300;
   }
 
   .glass-card:hover {
-    @apply bg-gray-800/80 border-primary ring-1 ring-primary/20;
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+    @apply bg-surface border-primary/30;
+    box-shadow: 0 4px 24px rgba(139, 92, 246, 0.08);
   }
 
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  /* Solid-color highlight text — replaces the old gradient text */
+  .text-highlight {
+    @apply text-primary;
+  }
+
+  /* Solid primary button */
+  .btn-primary {
+    @apply bg-primary text-white font-semibold rounded-full
+           transition-all duration-200
+           hover:bg-[#7C3AED] active:scale-[0.97];
+  }
+
+  /* Secondary / outline button */
+  .btn-secondary {
+    @apply bg-transparent text-foreground border border-border rounded-full font-semibold
+           transition-all duration-200
+           hover:border-primary/40 hover:bg-white/[0.03] active:scale-[0.97];
+  }
+
+  /* Solid accent button */
+  .btn-accent {
+    @apply bg-accent text-white font-semibold rounded-lg
+           transition-all duration-200
+           hover:bg-[#DB2777] active:scale-[0.97];
+  }
+
+  /* Card surface */
+  .card {
+    @apply bg-surface border border-border rounded-2xl transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply border-primary/20;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.06);
   }
 }
 

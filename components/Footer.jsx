@@ -5,14 +5,14 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 py-10 px-6">
+    <footer className="border-t border-border py-10 px-6">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
         {/* Left */}
         <div className="text-center md:text-left">
           <Link
             href="/"
-            className="text-2xl font-bold text-gradient"
+            className="text-2xl font-bold text-primary"
           >
             &lt;Israt /&gt;
           </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
         {/* Right */}
         <div className="text-center md:text-right text-sm text-muted-foreground">
           <p>Built with Next.js & Tailwind CSS</p>
-          <p className="mt-1">Designed & Developed by Israt ❤️</p>
+          <p className="mt-1">Designed & Developed by Israt</p>
         </div>
       </div>
     </footer>
