@@ -5,6 +5,7 @@ import TechStack from "@/components/TechStack";
 import Skills from "@/components/Skills";
 import Qualification from "@/components/Qualification";
 import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
@@ -22,8 +23,9 @@ export default function Home() {
         <About />
         <TechStack />
         {/* <Skills /> */}
-        <Qualification />
         <Projects />
+        <Experience />
+        <Qualification />
         <Contact />
         <Footer />
       </div>
