@@ -1,8 +1,8 @@
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "@/components/LenisProvider";
 import { Toaster } from "react-hot-toast";
-
+import LenisProvider from "@/components/LenisProvider";
+// import LenisProvider from "@/components/LenisProvider";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
