@@ -1,64 +1,44 @@
-# 🚀 Israt Portfolio
+ <h1 align="center"><strong>ERA<span style="color:#A855F7">.DEV</span></strong></h1>
 
-A modern, responsive, and interactive personal portfolio showcasing my projects, skills, and experience as a MERN Stack Developer.
+<p align="center">
+  <sub>PERSONAL PORTFOLIO · WEB DEVELOPMENT</sub>
+</p>
 
-## 🌐 Live Demo
+<p align="center">
+  A modern portfolio showcasing my projects, skills, and journey in web development.
+</p>
 
-> `https://portfolio-lovat-two-okbeg1pokh.vercel.app/`
+<p align="center">
+  <a href="https://portfolio-lovat-two-okbeg1pokh.vercel.app/">View Portfolio</a>
+</p>
 
-## ✨ Features
+## Features
 
-- Modern & Responsive Design
-- Smooth Scrolling Experience
-- Interactive UI & Animations
-- Project Showcase
-- Skills & Technologies
-- About Me Section
-- Contact Section
-- Mobile Friendly
-- Fast Performance
+- Responsive and modern UI
+- Smooth scrolling and animations
+- Projects and skills showcase
+- About and contact sections
+- Optimized performance
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-### Frontend
+- **Frontend:** Next.js, JavaScript, Tailwind CSS
+- **Icons:** Lucide React
+- **Tools:** Git, GitHub, VS Code
 
-- Next JS
-- Tailwind CSS
-- Lucide Icon
-- JavaScript
+## Featured Projects
 
-### Tools
+- TicketBari
+- SkillPilot AI
+- PetVerse
 
-- Git
-- GitHub
-- VS Code
-
-## 📂 Sections
-
-- Hero
-- About
-- Tech
-- Skills
-- Projects
-- Contact
-- Footer
-
-## 📸 Featured Projects
-
-- 🎟️ TicketBari
-- 🤖 SkillPilot AI
-- 🐾 PetVerse
-- 🎉 Confluxa
-- 📚 SkillsPhere
-- 📖 Expense Tracker
-
-## 📬 Contact
+## Contact
 
 **Israt Jahan Era**
 
-- Email: eraisrat022@gmail.com
-- GitHub: https://github.com/israt022
+- Email: [eraisrat022@gmail.com](mailto:eraisrat022@gmail.com)
+- GitHub: [@Israt022](https://github.com/Israt022)
 
-## ⭐ Show Your Support
+---
 
-If you like this project, consider giving it a ⭐ on GitHub.
+If you like my work, consider giving this repository a star.
